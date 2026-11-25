@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>5</title>
+    <style>
+        header,nav,article,ads,footer{
+            background: rgb(101, 181, 101);}
+
+        .container{
+            margin: auto;
+            min-width: 1000px;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 20% auto;
+            grid-template-rows: 100px 400px 190px ;
+        }
+            header { grid-area: 1 / 2 / span 1 / span 2;}
+            nav{ grid-area: 1 / 1 / span 4 / span 1;}
+            article{grid-area: 2 / 2 / span 1 / span 1;}
+            ads{ grid-area: 2 / 3 / span 1 / span 1;}
+            footer { grid-area: 3 / 2 / span 2 / span 2;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>header</header>
+        <nav>nav</nav>
+        <article>article</article>
+        <ads>ads</ads>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
